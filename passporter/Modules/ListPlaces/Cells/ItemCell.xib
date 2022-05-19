@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemCell" customModule="passporter" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ItemCell" customModule="passporter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="762" height="186"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwf-9I-MWZ">
+                    <rect key="frame" x="10" y="10" width="742" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-dw-S8m">
+                            <rect key="frame" x="160" y="57" width="572" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="69K-dt-ocv">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="giO-Ir-ghu"/>
+                                <constraint firstAttribute="height" constant="150" id="tFA-Us-dbd"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt6-By-Sur">
+                            <rect key="frame" x="165" y="103" width="567" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="69K-dt-ocv" firstAttribute="leading" secondItem="Hwf-9I-MWZ" secondAttribute="leading" id="Bxe-3Y-GGF"/>
+                        <constraint firstAttribute="trailing" secondItem="RCc-dw-S8m" secondAttribute="trailing" constant="10" id="EBn-Bz-7Kt"/>
+                        <constraint firstAttribute="bottom" secondItem="69K-dt-ocv" secondAttribute="bottom" id="NUM-vK-hjc"/>
+                        <constraint firstItem="RCc-dw-S8m" firstAttribute="centerY" secondItem="Hwf-9I-MWZ" secondAttribute="centerY" id="Rll-XZ-0U1"/>
+                        <constraint firstItem="Dt6-By-Sur" firstAttribute="top" secondItem="RCc-dw-S8m" secondAttribute="bottom" constant="10" id="U9E-Lb-1XR"/>
+                        <constraint firstItem="69K-dt-ocv" firstAttribute="top" secondItem="Hwf-9I-MWZ" secondAttribute="top" id="Zmq-Jn-Vfl"/>
+                        <constraint firstAttribute="trailing" secondItem="Dt6-By-Sur" secondAttribute="trailing" constant="10" id="bJB-ck-wvM"/>
+                        <constraint firstItem="Dt6-By-Sur" firstAttribute="leading" secondItem="69K-dt-ocv" secondAttribute="trailing" constant="15" id="cwz-Ws-ujH"/>
+                        <constraint firstItem="RCc-dw-S8m" firstAttribute="leading" secondItem="69K-dt-ocv" secondAttribute="trailing" constant="10" id="flm-nT-ago"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hwf-9I-MWZ" secondAttribute="trailing" constant="10" id="IJT-6C-B27"/>
+                <constraint firstItem="Hwf-9I-MWZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Tck-aL-Umq"/>
+                <constraint firstItem="Hwf-9I-MWZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Ygj-kJ-ZhJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainImageView" destination="69K-dt-ocv" id="h5W-oR-0h2"/>
+                <outlet property="mainView" destination="Hwf-9I-MWZ" id="ruc-wy-n4d"/>
+                <outlet property="subTitleLabel" destination="Dt6-By-Sur" id="ieL-6G-3Jg"/>
+                <outlet property="titleLabel" destination="RCc-dw-S8m" id="eT1-vg-EEj"/>
+            </connections>
+            <point key="canvasLocation" x="-108.69565217391305" y="94.419642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
